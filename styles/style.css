@@ -1,0 +1,236 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+/* Header */
+header {
+  background-color: #1f4e79;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+header h1 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+  flex-grow: 1;
+}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 8px 0;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+nav a:hover,
+nav a.active {
+  color: #e4cf0d;
+}
+/* Main content container */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+/* Page title */
+main h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+/* Two columns container */
+.top-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.box {
+  background: white;
+  box-shadow: 0 0 8px #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  flex: 1 1 300px;
+}
+.box h3 {
+  background-color: #1f4e79;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+/* Coursework box bullet style */
+.coursework ul {
+  padding-left: 20px;
+}
+.coursework ul li {
+  margin-bottom: 8px;
+}
+/* Image box */
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.image-caption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #555;
+  font-style: italic;
+}
+/* Certificate section */
+.certificate-section {
+  margin-top: 30px;
+  background-color: #1f4e79;
+  border-radius: 6px;
+  padding: 15px;
+  color: white;
+}
+.certificate-section h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+/* Filter buttons */
+.filter-buttons {
+  margin-bottom: 12px;
+}
+.filter-buttons button {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-right: 8px;
+  padding: 6px 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background-color: #e4cf0d;
+  color: black;
+}
+/* Course buttons container */
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* Base course button style */
+.course-btn {
+  flex: 1 1 30%;
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: default;
+  text-align: center;
+  user-select: none;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* CSE style */
+.course-btn.cse {
+  background-color: #7b3f1f; /* brown shade */
+  color: white;
+}
+/* WDD style */
+.course-btn.wdd {
+  background-color: #5a2c11; /* darker brown */
+  color: white;
+}
+/* Default style for others */
+.course-btn.default {
+  background-color: #eaeaea;
+  color: #333;
+}
+/* Footer */
+footer {
+  background-color: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #e4cf0d;
+  text-decoration: none;
+}
+footer .flag {
+  vertical-align: middle;
+  margin-left: 6px;
+  width: 24px;
+  height: 16px;
+}
+/* Responsive tweaks */
+@media (max-width: 650px) {
+  .top-section {
+    flex-direction: column;
+  }
+  .course-btn {
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 400px) {
+  .course-btn {
+    flex: 1 1 100%;
+  }
+}
+
+#menuToggle {
+  display: none;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+@media (max-width: 650px) {
+  #menuToggle {
+    display: block;
+  }
+  #menuLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  #menuLinks.show {
+    display: flex;
+  }
+}
+
+.course-btn.incomplete {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #555;
+  text-decoration: line-through;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rubia M. Francesco</title>
+<link rel="stylesheet" href="styles/style.css" />
+<script src="scripts/courses.js"></script>
+<script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+
+<header>
+  <img src="images/img1.jpg" alt="Profile photo" />
+  <h1>Rhema I. Kingsley</h1>
+</header>
+
+<nav>
+<button id="menuToggle" aria-label="Toggle Menu">☰</button>
+<div id="menuLinks">
+  <a href="#" class="active" aria-current="page">Home</a>
+  <a href="#">Chamber</a>
+  <a href="#">Final</a>
+  <a href="https://github.com/Kingsleyrhema">GitHub Profile</a>
+  <a href="https://www.linkedin.com/in/kingsleyrhema/">LinkedIn</a>
+</div>
+
+</nav>
+
+<main>
+   
+  <h2>Home</h2>
+   
+
+  <div class="top-section">
+    <section class="box coursework">
+      <h3>Course Work</h3>
+      <ul>
+        <li>Introduction to Programming</li>
+        <li>Data Structures</li>
+        <li>Web Development Fundamentals</li>
+      </ul>
+    </section>
+
+    <section class="box image-box">
+      <h3>Lagos, nigeria-flag</h3>
+      <img src="https://flagcdn.com/w20/ng.png" alt="Baobab Trees" />
+    </section>
+  </div>
+
+  
+  <section class="certificate-section">
+    <h3>Web and Computer Programming Certificate</h3>
+    <div class="filter-buttons" role="group" aria-label="Course filters">
+      <button id="btnAll" class="active" aria-pressed="true" onclick="filterCourses('all')">All</button>
+      <button id="btnCSE" aria-pressed="false" onclick="filterCourses('cse')">CSE</button>
+      <button id="btnWDD" aria-pressed="false" onclick="filterCourses('wdd')">WDD</button>
+    </div>
+    <p id="creditsSummary" aria-live="polite" style="margin-bottom: 12px; font-weight: bold;"></p>
+
+
+    <div class="courses" id="coursesContainer">
+      <!-- Courses will be dynamically injected here -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy;<span id="currentYear"></span> Rhema Ikechukwu Kingsley – Lagos, Nigeria 
+    <img src="https://flagcdn.com/w20/ng.png" alt="Nigeria Flag" class="flag" />
+  </p>
+  <p>Last Update: <span id="lastUpdate"></span></p>
+</footer>
+
+</body>
+</html>
