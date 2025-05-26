@@ -2,6 +2,7 @@
   "members": [
     {
       "name": "GreenTech Solutions",
+      "image": "images/demo-logo.jpg",
       "address": "42 Palm Street, Lago",
       "phone": "0800-111-2233",
       "website": "https://greentech.ng",
@@ -10,6 +11,7 @@
     {
       "name": "Naija Foods",
       "address": "3 Ajose Close, Ikeja",
+      "image": "images/demo-logo.jpg",
       "phone": "0800-222-3344",
       "website": "https://naijafoods.ng",
       "membership": "Silver"
@@ -17,6 +19,7 @@
     {
       "name": "Digital Kulture",
       "address": "56 Lekki Drive, Lagos",
+      "image": "images/demo-logo.jpg",
       "phone": "0800-333-4455",
       "website": "https://digitalkulture.africa",
       "membership": "Member"
@@ -24,6 +27,7 @@
     {
       "name": "LagHub Tech",
       "address": "88 Broad Street, Lagos",
+      "image": "images/demo-logo.jpg",
       "phone": "0800-444-5566",
       "website": "https://laghubtech.com",
       "membership": "Gold"
@@ -32,6 +36,7 @@
       "name": "Sunrise Textiles",
       "address": "12 Marina Road, Lagos",
       "phone": "0800-555-6677",
+      "image": "images/demo-logo.jpg",
       "website": "https://sunrisetextiles.ng",
       "membership": "Silver"
     },
@@ -39,12 +44,14 @@
       "name": "AfroInnovate",
       "address": "25 Allen Avenue, Ikeja",
       "phone": "0800-666-7788",
+      "image": "images/demo-logo.jpg",
       "website": "https://afroinnovate.africa",
       "membership": "Gold"
     },
     {
       "name": "FreshMart Organics",
       "address": "9 Bourdillon, Ikoyi",
+      "image": "images/demo-logo.jpg",
       "phone": "0800-777-8899",
       "website": "https://freshmart.ng",
       "membership": "Member"

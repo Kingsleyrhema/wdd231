@@ -46,7 +46,7 @@ async function loadSpotlights() {
     if (!response.ok) throw new Error('Failed to load member data');
 
     const jsonData = await response.json();
-    const members = jsonData.members; // ✅ Fix is here
+    const members = jsonData.members;
 
     // Filter gold and silver members
     const filtered = members.filter(m => 
@@ -62,19 +62,23 @@ async function loadSpotlights() {
     spotlightContainer.innerHTML = '';
 
     selected.forEach(member => {
-      spotlightContainer.innerHTML += `
-        <div class="spotlight-card">
-          <img src="${member.logo || 'images/demo-logo.jpg'}" alt="${member.name} logo" />
-          <h3>${member.name}</h3>
-          <p><strong>Phone:</strong> ${member.phone}</p>
-          <p><strong>Address:</strong> ${member.address}</p>
-          <p><strong>Website:</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a></p>
-          <p><strong>Membership Level:</strong> ${member.membership}</p>
-        </div>
+      const card = document.createElement('div');
+      card.className = 'spotlight-card';
+
+      card.innerHTML = `
+        <img src="${member.image}" alt="${member.name} logo" />
+        <h3>${member.name}</h3>
+        <p>${member.description}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
       `;
+
+      spotlightContainer.appendChild(card);
     });
+
   } catch (error) {
-    console.error(error);
+    console.error('Error loading spotlight members:', error);
   }
 }
+
 loadSpotlights();
+
