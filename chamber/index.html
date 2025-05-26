@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Welcome to Rhema Chamber of Commerce - connecting local businesses and community." />
+  <meta name="author" content="Rhema Kingsley" />
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Rhema Chamber of Commerce Home" />
+  <meta property="og:description" content="Join Rhema Chamber of Commerce to grow your business and connect with the community." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:url" content="https://kingsleyrhema.github.io/wdd231/chamber/index.html" />
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <title>Rhema Chamber of Commerce</title>
+</head>
+<body>
+  <header>
+    <div class="logo">Rhema <span>Chamber of Commerce</span></div>
+  
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Image Section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rhema Chamber Hero" />
+      <div class="hero-text">
+        <h1>Welcome to Rhema Chamber of Commerce</h1>
+        <p>Your partner in growing local business and community success.</p>
+        <a href="#" class="btn-cta">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Current Events</h2>
+      <ul>
+        <li><strong>Annual Networking Gala</strong> - May 30, 2025</li>
+        <li><strong>Small Business Workshop</strong> - June 15, 2025</li>
+        <li><strong>Summer Community Festival</strong> - July 10, 2025</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather">
+  <h2>Local Weather</h2>
+  <p>Temperature: <span id="current-temp">Loading...</span></p>
+  <p>Condition: <span id="current-desc">Loading...</span></p>
+  <ul id="forecast"></ul>
+</section>
+
+
+    <!-- Company Spotlights -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-cards" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <strong>Rhema Chamber of Commerce</strong><br />
+      10 Rue De La Paix<br />
+      Lago, Nigeria 999<br />
+      info@Rhemacc.org<br />
+      (223) 555-2300
+    </div>
+    <div class="socials">
+      <img src="images/youtube.svg" alt="YouTube" />
+      <img src="images/twitter.svg" alt="Twitter" />
+      <img src="images/linkedin.svg" alt="LinkedIn" />
+    </div>
+    <div class="dev-info">
+      WDD231 Class Project<br />
+      Rhema Kingsley<br />
+      &copy; <span id="year"></span> Rhema Chamber of Commerce<br />
+      Last Modified: <span id="lastModified"></span>
+    </div>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>
