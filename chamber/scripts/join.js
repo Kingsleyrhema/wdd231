@@ -1,15 +1,25 @@
- // Set hidden timestamp on form load
-    document.getElementById("timestamp").value = new Date().toISOString();
+document.addEventListener("DOMContentLoaded", function () {
+  // Set hidden timestamp on form load
+  const timestampEl = document.getElementById("timestamp");
+  if (timestampEl) {
+    timestampEl.value = new Date().toISOString();
+  }
 
-    // Modals
-    function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
+  // Modals
+  window.openModal = function (id) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = "block";
+  }
 
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
+  window.closeModal = function (id) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = "none";
+  }
 
-    // Update footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
+  // Update footer
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  const modifiedEl = document.getElementById("lastModified");
+  if (modifiedEl) modifiedEl.textContent = document.lastModified;
+});
