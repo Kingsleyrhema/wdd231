@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the Rhema Chamber of Commerce. Apply for membership and grow your business network." />
+  <meta name="author" content="Rhema Kingsley" />
+  <link rel="stylesheet" href="styles/join.css" />
+   <script src="scripts/join.js"></script>
+  <link rel="icon" href="images/favicon.ico" />
+  <title>Join the Rhema Chamber of Commerce</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Rhema <span>Chamber of Commerce</span></div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Rhema Chamber</h1>
+
+    <div class="form-layout">
+      <form action="thankyou.html" method="get" class="form-container">
+        <label>
+          First Name:
+          <input type="text" name="firstname" required title="Enter your first name" autocomplete="given-name" />
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastname" required title="Enter your last name" autocomplete="family-name" />
+        </label>
+
+        <label>
+          Title/Position:
+          <input type="text" name="orgtitle" title="Your position (minimum 7 characters, letters and hyphens only)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" required title="Enter a valid email" autocomplete="email" placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Mobile Number:
+          <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel" />
+        </label>
+
+        <label>
+          Organization Name:
+          <input type="text" name="organization" required title="Your organization name" autocomplete="organization" />
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" title="Choose a membership level">
+            <option value="np">NP Membership (Free - Nonprofits)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe your organization"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <input type="submit" value="Apply for Membership" />
+      </form>
+
+      <section class="membership-cards">
+        <div class="card">
+          <h3>NP Membership</h3>
+          <a onclick="openModal('modal-np')">View Benefits</a>
+        </div>
+        <div class="card">
+          <h3>Bronze Membership</h3>
+          <a onclick="openModal('modal-bronze')">View Benefits</a>
+        </div>
+        <div class="card">
+          <h3>Silver Membership</h3>
+          <a onclick="openModal('modal-silver')">View Benefits</a>
+        </div>
+        <div class="card">
+          <h3>Gold Membership</h3>
+          <a onclick="openModal('modal-gold')">View Benefits</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-np" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-np')">&times;</span>
+        <h2>NP Membership Benefits</h2>
+        <ul>
+          <li>Free membership for nonprofits</li>
+          <li>Community event invitations</li>
+          <li>Directory listing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-bronze" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+          <li>Basic business listing</li>
+          <li>1 event promotion per year</li>
+          <li>Quarterly training invites</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-silver" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+          <li>Enhanced directory listing</li>
+          <li>3 event promotions per year</li>
+          <li>Free access to 2 workshops</li>
+          <li>Spotlight in newsletter</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-gold" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+          <li>Premium listing + homepage feature</li>
+          <li>Unlimited event promotions</li>
+          <li>Free booth at all chamber events</li>
+          <li>Exclusive networking access</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <strong>Rhema Chamber of Commerce</strong><br />
+      10 Rue De La Paix<br />
+      Lago, Nigeria 999<br />
+      info@Rhemacc.org<br />
+      (223) 555-2300
+    </div>
+    <div class="socials">
+      <img src="images/youtube.svg" alt="YouTube" />
+      <img src="images/twitter.svg" alt="Twitter" />
+      <img src="images/linkedin.svg" alt="LinkedIn" />
+    </div>
+    <div class="dev-info">
+      WDD231 Class Project<br />
+      Rhema Kingsley<br />
+      &copy; <span id="year"></span> Rhema Chamber of Commerce<br />
+      Last Modified: <span id="lastModified"></span>
+    </div>
+  </footer>
+
+
+</body>
+</html>
