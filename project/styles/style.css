@@ -1,0 +1,48 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f1e7;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #88c9bf;
+}
+
+header {
+  background-color: #88c9bf;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-left: 5px solid #88c9bf;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #88c9bf;
+  color: white;
+}
