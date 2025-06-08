@@ -15,16 +15,40 @@
   <meta property="og:description" content="Find and explore businesses in Rhema." />
   <meta property="og:image" content="https://kingsleyrhema.github.io/wdd231/chamber/images/og-image.jpg" />
   <meta property="og:url" content="https://kingsleyrhema.github.io/wdd231/chamber/directory.html" />
+
+  <link rel="preload" as="image" href="images/riverside.webp">
+  <link rel="preload" as="image" href="images/aquarium.webp">
+  <link rel="preload" as="image" href="images/beach.webp">
+  <link rel="preload" as="image" href="images/gardens.webp">
+  <link rel="preload" as="image" href="images/juice.webp">
+  <link rel="preload" as="image" href="images/market.webp">
+  <link rel="preload" as="image" href="images/museum.webp">
+  <link rel="preload" as="image" href="images/tower.webp">
+
   
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/discover.css" />
-  <link rel="stylesheet" href="styles/medium.css" />
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="styles/discover-style.css" />
+  
+   
+  <link rel="preload" href="styles/style.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/style.css"></noscript>
+
+
+  <link rel="preload" href="styles/discover.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/discover.css"></noscript>
+
+
+  <link rel="preload" href="styles/medium.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/medium.css"></noscript>
+
+
+  <link rel="preload" href="styles/discover-style.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/discover-style.css"></noscript>
+  <link rel="icon" href="images/favicon.ico">
+
+
 
 </head>
 <body>
-  <!-- header/nav preserved -->
+
   <header>
     <div class="logo">Rhema <span>Chamber of Commerce</span></div>
     <nav>
@@ -66,6 +90,6 @@
     </div>
   </footer>
 
-  <script src="scripts/discover.js"></script>
+  <script src="scripts/discover.js" defer></script>
 </body>
 </html>
