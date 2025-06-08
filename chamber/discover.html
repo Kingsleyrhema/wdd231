@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore verified businesses and entrepreneurs in the Rhema Chamber of Commerce. Your trusted directory for networking and local services.">
-  <meta name="author" content="Rhema Kingsley"/>
-  
-  <!-- Facebook Open Graph -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- Facebook Open Graph -->
   <meta property="og:title" content="Rhema Chamber Directory" />
   <meta property="og:description" content="Find and explore businesses in Rhema." />
   <meta property="og:image" content="https://kingsleyrhema.github.io/wdd231/chamber/images/og-image.jpg" />
   <meta property="og:url" content="https://kingsleyrhema.github.io/wdd231/chamber/directory.html" />
-
-  <link rel="icon" href="images/favicon.ico" />
+  <title>Discover Rhema</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <title>Rhema Chamber of Commerce Business Directory</title>
-
+  <link rel="stylesheet" href="styles/discover.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
+  <link rel="stylesheet" href="styles/discover-style.css" />
 </head>
 <body>
+  <!-- header/nav preserved -->
   <header>
     <div class="logo">Rhema <span>Chamber of Commerce</span></div>
-  
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="discover.html">Discover</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Rhema Chamber of Commerce Business Directory</h1>
-
-    <section class="controls">
-      <button id="grid-view">Grid View</button>
-      <button id="list-view">List View</button>
+    <h1>Discover Our Community</h1>
+    <aside id="visitMsg"></aside>
+    <section class="grid-container" id="discoverGrid">
+      <!-- JS will inject 8 .card elements here -->
     </section>
-
-    <section id="members" class="grid"></section>
   </main>
 
-  <footer>
+    <footer>
     <div class="contact">
       <strong>Rhema Chamber of Commerce</strong><br/>
       10 Rue De La Paix<br/>
@@ -63,6 +58,6 @@
     </div>
   </footer>
 
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/discover.js"></script>
 </body>
 </html>

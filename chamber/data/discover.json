@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Riverside Park",
+    "img": "images/riverside.webp",
+    "address": "123 River Rd, Lago, NG",
+    "desc": "A sprawling park along the Lagos River with walking trails, picnic spots, and a playground."
+  },
+  {
+    "title": "Heritage Museum",
+    "img": "images/museum.webp",
+    "address": "45 History Ln, Lago, NG",
+    "desc": "Showcasing the rich cultural heritage of our region through rotating exhibits."
+  },
+  {
+    "title": "Sunset Beach",
+    "img": "images/beach.webp",
+    "address": "Beachfront Ave, Lago, NG",
+    "desc": "Golden sands and gentle waves make this the perfect spot for families."
+  },
+  {
+    "title": "City Aquarium",
+    "img": "images/aquarium.webp",
+    "address": "8 Ocean Blvd, Lago, NG",
+    "desc": "Home to over 120 species of aquatic life, plus interactive touch tanks."
+  },
+  {
+    "title": "Botanic Gardens",
+    "img": "images/gardens.webp",
+    "address": "77 Greenway Dr, Lago, NG",
+    "desc": "A 10-acre oasis of exotic plants, fountains, and shaded benches."
+  },
+  {
+    "title": "Skyline Tower",
+    "img": "images/tower.webp",
+    "address": "200 High St, Lago, NG",
+    "desc": "Observation deck offering 360° views of the city and river below."
+  },
+  {
+    "title": "Historic Market",
+    "img": "images/market.webp",
+    "address": "9 Commerce St, Lago, NG",
+    "desc": "Open-air market with local artisans, fresh produce, and street food."
+  },
+  {
+    "title": "Fruit Juice",
+    "img": "images/juice.webp",
+    "address": "150 Ale Rd, Lago, NG",
+    "desc": "Fruit juice brewed on-site, with weekend tours and tastings."
+  }
+]
