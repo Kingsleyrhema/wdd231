@@ -1,4 +1,28 @@
-/* Reset */
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+.some-overlay {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+button, a, input {
+  -webkit-appearance: none;
+  forced-color-adjust: none;
+}
+
+html {
+  scrollbar-width: auto;
+}
+
+.zoomable {
+  zoom: 1;
+}
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 @media (max-width: 600px) {
