@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submission Received</title>
+  <meta name="description" content="Your booking request details.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1975/1975668.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yoga & Wellness Studio">
+  <meta property="og:description" content="Experience holistic health through yoga, mindfulness, and wellness practices.">
+  <meta property="og:image" content="https://source.unsplash.com/featured/?yoga-studio">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:type" content="website">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Yoga & Wellness</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="schedule.html" class="nav-link">Class Schedule</a></li>
+        <li class="nav-item"><a href="booking.html" class="nav-link">Book & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="submission">
+      <h1>Submission Received</h1>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yoga & Wellness Studio</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const results = document.getElementById('results');
+      if (![...params].length) {
+        results.textContent = 'No submission data found.';
+        return;
+      }
+      const list = document.createElement('ul');
+      for (let [key, value] of params.entries()) {
+        const li = document.createElement('li');
+        const label = key.replace(/-/g,' ').replace(/\b\w/g, l=>l.toUpperCase());
+        li.textContent = `${label}: ${value}`;
+        list.appendChild(li);
+      }
+      results.appendChild(list);
+    });
+  </script>
+</body>
+</html>

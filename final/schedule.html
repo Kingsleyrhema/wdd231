@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yoga & Wellness Studio | Class Schedule</title>
+  <meta name="description" content="View our yoga class schedules and book your session.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1975/1975668.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yoga & Wellness Studio">
+  <meta property="og:description" content="Experience holistic health through yoga, mindfulness, and wellness practices.">
+  <meta property="og:image" content="https://source.unsplash.com/featured/?yoga-studio">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:type" content="website">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Yoga & Wellness</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="schedule.html" class="nav-link active">Class Schedule</a></li>
+        <li class="nav-item"><a href="booking.html" class="nav-link">Book & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Class Schedule</h1>
+      <!-- Dynamic class list -->
+      <div id="class-list" class="class-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-title" class="modal-title"></h2>
+        <button id="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Yoga & Wellness Studio</p>
+    <p><a style="color: blue;" href="attributions.html">Attributions</a></p>
+     <p><a style="color: blue;" href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" rel="noopener">
+    Watch Video Demo: JavaScript Functionality
+  </a></p>
+  </footer>
+
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/schedule.js" type="module"></script>
+</body>
+</html>

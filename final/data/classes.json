@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Sunrise Vinyasa",
+    "instructor": "Emily Chen",
+    "time": "07:00 AM",
+    "duration": 60,
+    "level": "Intermediate",
+    "imageUrl": "https://picsum.photos/seed/sunrise_vinyasa/600/400",
+    "description": "Energize your day with a flowing Vinyasa practice at sunrise."
+  },
+  {
+    "id": 2,
+    "name": "Power Yoga",
+    "instructor": "Michael Lee",
+    "time": "09:00 AM",
+    "duration": 60,
+    "level": "Advanced",
+    "imageUrl": "https://picsum.photos/seed/power_yoga/600/400",
+    "description": "Build strength and flexibility in this high-energy Power Yoga class."
+  },
+  {
+    "id": 3,
+    "name": "Gentle Hatha",
+    "instructor": "Sophie Patel",
+    "time": "11:00 AM",
+    "duration": 45,
+    "level": "Beginner",
+    "imageUrl": "https://picsum.photos/seed/gentle_hatha/600/400",
+    "description": "A gentle introduction to basic yoga poses for all levels."
+  },
+  {
+    "id": 4,
+    "name": "Restorative Yoga",
+    "instructor": "David Wong",
+    "time": "01:00 PM",
+    "duration": 60,
+    "level": "All Levels",
+    "imageUrl": "https://picsum.photos/seed/restorative_yoga/600/400",
+    "description": "Relax and restore with supported poses and mindful breathing."
+  },
+  {
+    "id": 5,
+    "name": "Yoga Sculpt",
+    "instructor": "Alicia Garcia",
+    "time": "03:00 PM",
+    "duration": 45,
+    "level": "Intermediate",
+    "imageUrl": "https://picsum.photos/seed/yoga_sculpt/600/400",
+    "description": "Combine yoga, cardio, and strength training for a full-body workout."
+  },
+  {
+    "id": 6,
+    "name": "Yin Yoga",
+    "instructor": "Liam Johnson",
+    "time": "05:00 PM",
+    "duration": 60,
+    "level": "All Levels",
+    "imageUrl": "https://picsum.photos/seed/yin_yoga/600/400",
+    "description": "Slow-paced poses held for longer periods to stretch connective tissues."
+  },
+  {
+    "id": 7,
+    "name": "Ashtanga Primary",
+    "instructor": "Maya Singh",
+    "time": "06:30 PM",
+    "duration": 75,
+    "level": "Advanced",
+    "imageUrl": "https://picsum.photos/seed/ashtanga_primary/600/400",
+    "description": "Follow the traditional Ashtanga sequence for strength and flexibility."
+  },
+  {
+    "id": 8,
+    "name": "Kundalini Yoga",
+    "instructor": "Rahul Khanna",
+    "time": "08:00 PM",
+    "duration": 60,
+    "level": "All Levels",
+    "imageUrl": "https://picsum.photos/seed/kundalini_yoga/600/400",
+    "description": "Awaken your energy with breath, movement, and mantra chanting."
+  },
+  {
+    "id": 9,
+    "name": "Chair Yoga",
+    "instructor": "Olivia Martinez",
+    "time": "10:00 AM",
+    "duration": 30,
+    "level": "Beginner",
+    "imageUrl": "https://picsum.photos/seed/chair_yoga/600/400",
+    "description": "Accessible yoga practice using a chair for support."
+  },
+  {
+    "id": 10,
+    "name": "Prenatal Yoga",
+    "instructor": "Grace Kim",
+    "time": "12:30 PM",
+    "duration": 60,
+    "level": "Beginner",
+    "imageUrl": "https://picsum.photos/seed/prenatal_yoga/600/400",
+    "description": "Gentle yoga designed for expectant mothers."
+  },
+  {
+    "id": 11,
+    "name": "Hot Yoga",
+    "instructor": "Carlos Perez",
+    "time": "06:00 PM",
+    "duration": 60,
+    "level": "Intermediate",
+    "imageUrl": "https://picsum.photos/seed/hot_yoga/600/400",
+    "description": "Sweat it out in a heated room to detoxify and challenge yourself."
+  },
+  {
+    "id": 12,
+    "name": "Yoga Nidra",
+    "instructor": "Emma Davis",
+    "time": "07:30 PM",
+    "duration": 30,
+    "level": "All Levels",
+    "imageUrl": "https://picsum.photos/seed/yoga_nidra/600/400",
+    "description": "Guided sleep meditation practice to relax and reset."
+  },
+  {
+    "id": 13,
+    "name": "Aerial Yoga",
+    "instructor": "Sophia Liu",
+    "time": "02:00 PM",
+    "duration": 60,
+    "level": "Intermediate",
+    "imageUrl": "https://picsum.photos/seed/aerial_yoga/600/400",
+    "description": "Experience yoga poses with hammock support for a fun challenge."
+  },
+  {
+    "id": 14,
+    "name": "Flow & Restore",
+    "instructor": "James Brown",
+    "time": "04:00 PM",
+    "duration": 75,
+    "level": "All Levels",
+    "imageUrl": "https://picsum.photos/seed/flow_restore/600/400",
+    "description": "Blend dynamic flow with restorative poses in one session."
+  },
+  {
+    "id": 15,
+    "name": "Morning Meditation",
+    "instructor": "Ava Thompson",
+    "time": "06:30 AM",
+    "duration": 20,
+    "level": "All Levels",
+    "imageUrl": "https://picsum.photos/seed/morning_meditation/600/400",
+    "description": "Start your day with a guided mindfulness meditation."
+  }
+]
