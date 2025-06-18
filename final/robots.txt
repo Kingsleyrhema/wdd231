@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kingsleyrhema.github.io/wdd231/final/sitemap.xml 

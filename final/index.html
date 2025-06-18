@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
   <!-- SEO & Social -->
   <title>Yoga & Wellness Studio | Home</title>
   <meta name="description" content="Yoga & Wellness Studio offers holistic health through yoga, mindfulness, and wellness practices.">
@@ -21,6 +26,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="images/yoga.jpg" as="image">
+  <link rel="preload" href="styles/style.css" as="style">
   
   <!-- Site CSS -->
   <link rel="stylesheet" href="styles/style.css">
@@ -42,7 +51,7 @@
 
   <main>
     <section class="hero">
-      <img src="images/yoga.jpg" alt="Yoga practice" loading="lazy">
+      <img src="images/yoga.jpg" alt="Yoga practice" width="412" height="494">
       <div class="hero-content">
         <h1>Welcome to Yoga &amp; Wellness Studio</h1>
         <p>Discover holistic health through yoga, mindfulness, and personalized wellness practices.</p>
@@ -52,27 +61,27 @@
 
     <section class="features">
       <div class="feature">
-        <img src="images/mindfullness.jpg" alt="Mindfulness" loading="lazy">
+        <img src="images/mindfullness.jpg" alt="Mindfulness" loading="lazy" width="348" height="250">
         <h2>Mindfulness</h2>
         <p>Enhance your mental clarity and emotional balance with guided mindfulness exercises.</p>
       </div>
       <div class="feature">
-        <img src="images/wellness.jpg" alt="Wellness" loading="lazy">
+        <img src="images/wellness.jpg" alt="Wellness" loading="lazy" width="348" height="250">
         <h2>Wellness Coaching</h2>
         <p>Personalized coaching sessions to support your wellness journey and life goals.</p>
       </div>
       <div class="feature">
-        <img src="images/yougatherapy.webp" alt="Yoga Therapy" loading="lazy">
-        <h2>Yoga Therapy</h2>
-        <p>Experience therapeutic yoga practices tailored to your physical needs.</p>
+        <img src="images/sunrise_vinyasa.png" alt="Sunrise Vinyasa" loading="lazy" width="348" height="250">
+        <h2>Sunrise Vinyasa</h2>
+        <p>Start your day with energy and intention through our invigorating morning flow.</p>
       </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Yoga & Wellness Studio</p>
-    <p><a style="color: blue;" href="attributions.html">Attributions</a></p>
-     <p><a style="color: blue;" href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" rel="noopener">
+    <p><a href="attributions.html">Attributions</a></p>
+     <p><a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" rel="noopener">
     Watch Video Demo: JavaScript Functionality
   </a></p>
   </footer>
